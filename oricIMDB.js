@@ -19,10 +19,10 @@ var movieTitle = 'titanic'
 module.exports = {
   '@tags': ['toTest'],
   'Oric IMDb': function(browser) {
-    browser
-      .url('https://www.imdb.com/')
+	  browser
+	  .url('https://www.imdb.com/')
 	  // Wait for body to be ready and ensure the title matches that of the homepage
-      .waitForElementVisible('body')
+	  .waitForElementVisible('body')
 	  .assert.title('IMDb - Movies, TV and Celebrities - IMDb')
 	  
 	  // Wait for the searchbar to be ready, enter the search term and click to send query
@@ -30,9 +30,9 @@ module.exports = {
 	  .setValue('input[id="navbar-query"]', movieTitle)
 	  .click('button[id="navbar-submit-button"]', function(result) {this.assert.strictEqual(result.status, 0);})
 	  
-      // Ensure you're on the found results page, displaying results for search term from before.
+	  // Ensure you're on the found results page, displaying results for search term from before.
 	  .assert.title('Find - IMDb')
 	  .assert.containsText('span.findSearchTerm', movieTitle)
-      .end();
+	  .end();
   }
 };
