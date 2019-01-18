@@ -1,7 +1,7 @@
 require('env2')('.env'); // optionally store youre Evironment Variables in .env
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
-const { expect } = require('chai');
+const { expect } = require("chai");
 const SCREENSHOT_PATH = "./screenshots/";
 
 // we use a nightwatch.conf.js file so we can include comments and helper functions
