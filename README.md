@@ -1,4 +1,4 @@
-# Automation
+# nightwatchJS-Example
 Steps:
 1. Install nightwatchJS
 2. Clone repository
