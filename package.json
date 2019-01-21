@@ -7,7 +7,7 @@
     "node": ">=4.4.6"
   },
   "scripts": {
-    "e2e": "nightwatch --config nightwatch.conf.BASIC.js"
+    "e2e": "nightwatch --config nightwatch.conf.ORIC.js"
   },
   "repository": {
     "type": "git",
